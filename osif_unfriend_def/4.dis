@@ -1,0 +1,135 @@
+  3           0 LOAD_CONST               0 ('\r[*] All friend id successfully retrieved          ')
+              3 PRINT_ITEM          
+              4 PRINT_NEWLINE       
+
+  4           5 LOAD_CONST               1 ('[*] Start')
+              8 PRINT_ITEM          
+              9 PRINT_NEWLINE       
+
+  6          10 SETUP_EXCEPT           208 (to 221)
+
+  7          13 LOAD_CONST               2 (0)
+             16 STORE_NAME               0 (counter)
+
+  8          19 SETUP_LOOP             183 (to 205)
+             22 LOAD_NAME                1 (posts)
+             25 GET_ITER            
+        >>   26 FOR_ITER               175 (to 204)
+             29 STORE_NAME               2 (post)
+
+  9          32 LOAD_NAME                0 (counter)
+             35 LOAD_CONST               3 (50)
+             38 COMPARE_OP               5 (>=)
+             41 POP_JUMP_IF_FALSE       48
+
+ 10          44 BREAK_LOOP          
+             45 JUMP_FORWARD            10 (to 58)
+
+ 12     >>   48 LOAD_NAME                0 (counter)
+             51 LOAD_CONST               4 (1)
+             54 INPLACE_ADD         
+             55 STORE_NAME               0 (counter)
+
+ 14     >>   58 LOAD_NAME                3 (requests)
+             61 LOAD_ATTR                2 (post)
+             64 LOAD_CONST               5 ('https://graph.facebook.com/me/friends/%s?method=delete&access_token=%s')
+             67 LOAD_NAME                2 (post)
+             70 LOAD_CONST               6 ('id')
+             73 BINARY_SUBSCR       
+             74 LOAD_GLOBAL              4 (token)
+             77 BUILD_TUPLE              2
+             80 BINARY_MODULO       
+             81 CALL_FUNCTION            1
+             84 STORE_NAME               5 (r)
+
+ 15          87 LOAD_NAME                6 (json)
+             90 LOAD_ATTR                7 (loads)
+             93 LOAD_NAME                5 (r)
+             96 LOAD_ATTR                8 (text)
+             99 CALL_FUNCTION            1
+            102 STORE_NAME               9 (a)
+
+ 17         105 SETUP_EXCEPT            47 (to 155)
+
+ 18         108 LOAD_NAME                9 (a)
+            111 LOAD_CONST               7 ('error')
+            114 BINARY_SUBSCR       
+            115 LOAD_CONST               8 ('message')
+            118 BINARY_SUBSCR       
+            119 STORE_NAME              10 (cek)
+
+ 19         122 LOAD_NAME               11 (W)
+            125 LOAD_CONST               9 ('[')
+            128 BINARY_ADD          
+            129 LOAD_NAME               12 (R)
+            132 BINARY_ADD          
+            133 LOAD_NAME                2 (post)
+            136 LOAD_CONST              10 ('name')
+            139 BINARY_SUBSCR       
+            140 BINARY_ADD          
+            141 LOAD_NAME               11 (W)
+            144 BINARY_ADD          
+            145 LOAD_CONST              11 ('] Failed   ')
+            148 BINARY_ADD          
+            149 PRINT_ITEM          
+            150 PRINT_NEWLINE       
+            151 POP_BLOCK           
+            152 JUMP_ABSOLUTE           26
+
+ 20     >>  155 DUP_TOP             
+            156 LOAD_NAME               13 (TypeError)
+            159 COMPARE_OP              10 (exception match)
+            162 POP_JUMP_IF_FALSE      200
+            165 POP_TOP             
+            166 POP_TOP             
+            167 POP_TOP             
+
+ 21         168 LOAD_NAME               11 (W)
+            171 LOAD_CONST               9 ('[')
+            174 BINARY_ADD          
+            175 LOAD_NAME               14 (G)
+            178 BINARY_ADD          
+            179 LOAD_NAME                2 (post)
+            182 LOAD_CONST              10 ('name')
+            185 BINARY_SUBSCR       
+            186 BINARY_ADD          
+            187 LOAD_NAME               11 (W)
+            190 BINARY_ADD          
+            191 LOAD_CONST              12 ('] Removed  ')
+            194 BINARY_ADD          
+            195 PRINT_ITEM          
+            196 PRINT_NEWLINE       
+            197 JUMP_ABSOLUTE           26
+        >>  200 END_FINALLY         
+            201 JUMP_ABSOLUTE           26
+        >>  204 POP_BLOCK           
+
+ 23     >>  205 LOAD_CONST              13 ('[*] done')
+            208 PRINT_ITEM          
+            209 PRINT_NEWLINE       
+
+ 24         210 LOAD_NAME               15 (bot)
+            213 CALL_FUNCTION            0
+            216 POP_TOP             
+            217 POP_BLOCK           
+            218 JUMP_FORWARD            29 (to 250)
+
+ 25     >>  221 DUP_TOP             
+            222 LOAD_NAME               16 (KeyboardInterrupt)
+            225 COMPARE_OP              10 (exception match)
+            228 POP_JUMP_IF_FALSE      249
+            231 POP_TOP             
+            232 POP_TOP             
+            233 POP_TOP             
+
+ 26         234 LOAD_CONST              14 ('\r[!] Stopped !!               ')
+            237 PRINT_ITEM          
+            238 PRINT_NEWLINE       
+
+ 27         239 LOAD_NAME               15 (bot)
+            242 CALL_FUNCTION            0
+            245 POP_TOP             
+            246 JUMP_FORWARD             1 (to 250)
+        >>  249 END_FINALLY         
+        >>  250 LOAD_CONST              15 (None)
+            253 RETURN_VALUE        
