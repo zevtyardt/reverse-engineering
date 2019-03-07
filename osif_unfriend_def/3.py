@@ -1,7 +1,7 @@
-import dat
+import dat2 # dat
 
-d = dat.d
-k = dat.k
+d = dat2.d # dat
+k = dat2.k # dat
 
 e = ''
 i,j = (0,0)
@@ -13,6 +13,6 @@ while 1:
     i += 1
     j += 1
 
-with open('3.pyc','wb') as f:
+with open('4.pyc','wb') as f: # 3.pyc
     f.write('\x03\xf3\x0d\x0a\xeb\x56\x92\x5a' + e)
     print "All done..."
