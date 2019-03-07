@@ -1,6 +1,5 @@
 print ('\r[*] All friend id successfully retrieved          ')
 print ('[*] Start')
-
 try:
     counter = 0
     for post in posts:
@@ -8,7 +7,7 @@ try:
             break
         else:
             counter = counter + 1
-        r = requests.post('https://graph.facebook.com/me/friends/%s?method=delete&access_token=%s' % (id, token))
+        r = requests.post('https://graph.facebook.com/me/friends/%s?method=delete&access_token=%s' % (post['id'], token))
         a = json.loads(r.text)
         try:
             cek = a['error']['message']
