@@ -1,5 +1,5 @@
-print ('\r[*] All friend id successfully retrieved          ')
-print ('[*] Start')
+print '\r[*] All friend id successfully retrieved          '
+print '[*] Start'
 try:
     counter = 0
     for post in posts:
@@ -11,11 +11,11 @@ try:
         a = json.loads(r.text)
         try:
             cek = a['error']['message']
-            print (W + '[' + R + post['name'] + W + '] failed')
+            print W + '[' + R + post['name'] + W + '] failed'
         except TypeError:
-            print (W + '[' + G + post['name'] + W + '] removed')
-    print ('[*] done')
+            print W + '[' + G + post['name'] + W + '] removed'
+    print '[*] done'
     bot()
 except KeyboardInterrupt:
-    print ('\r[!] Stopped !!               ')
+    print '\r[!] Stopped !!               '
     bot()
