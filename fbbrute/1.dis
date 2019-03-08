@@ -1,0 +1,172 @@
+code
+   argcount 0
+   nlocals 0
+   stacksize 3
+   flags 0040
+   code
+      6400005a0000642a00640400176405001764060017640700176408001764
+      090017640a0017640b0017640c0017640d0017640e0017640f0017641000
+      176411001764120017641300176414001764150017641600176417001764
+      1800176404001764190017641a0017641b0017641c0017641d0017641e00
+      17641f001764200017642100176421001764210017642100176421001764
+      210017642200176421001764210017642100176423001764240017641c00
+      17641d0017641e0017642500176426001764270017642400176428000455
+      64280053
+  1           0 LOAD_CONST               0 ('0000')
+              3 STORE_NAME               0 (__doc__)
+              6 LOAD_CONST              42 ('exec"6465662075')
+              9 LOAD_CONST               4 ('6e62696e28')
+             12 BINARY_ADD          
+             13 LOAD_CONST               5 ('782c626974')
+             16 BINARY_ADD          
+             17 LOAD_CONST               6 ('733d38293a')
+             20 BINARY_ADD          
+             21 LOAD_CONST               7 ('0a20726574')
+             24 BINARY_ADD          
+             25 LOAD_CONST               8 ('75726e2027')
+             28 BINARY_ADD          
+             29 LOAD_CONST               9 ('272e6a6f69')
+             32 BINARY_ADD          
+             33 LOAD_CONST              10 ('6e285b6368')
+             36 BINARY_ADD          
+             37 LOAD_CONST              11 ('7228696e74')
+             40 BINARY_ADD          
+             41 LOAD_CONST              12 ('2873747228')
+             44 BINARY_ADD          
+             45 LOAD_CONST              13 ('78295b693a')
+             48 BINARY_ADD          
+             49 LOAD_CONST              14 ('692b626974')
+             52 BINARY_ADD          
+             53 LOAD_CONST              15 ('735d2c3229')
+             56 BINARY_ADD          
+             57 LOAD_CONST              16 ('2920666f72')
+             60 BINARY_ADD          
+             61 LOAD_CONST              17 ('206920696e')
+             64 BINARY_ADD          
+             65 LOAD_CONST              18 ('2072616e67')
+             68 BINARY_ADD          
+             69 LOAD_CONST              19 ('6528302c6c')
+             72 BINARY_ADD          
+             73 LOAD_CONST              20 ('656e287374')
+             76 BINARY_ADD          
+             77 LOAD_CONST              21 ('7228782929')
+             80 BINARY_ADD          
+             81 LOAD_CONST              22 ('2c62697473')
+             84 BINARY_ADD          
+             85 LOAD_CONST              23 ('295d290a65')
+             88 BINARY_ADD          
+             89 LOAD_CONST              24 ('7865632875')
+             92 BINARY_ADD          
+             93 LOAD_CONST               4 ('6e62696e28')
+             96 BINARY_ADD          
+             97 LOAD_CONST              25 ('7478742929')
+            100 BINARY_ADD          
+            101 LOAD_CONST              26 ('0a')
+            104 BINARY_ADD          
+            105 LOAD_CONST              27 ('"')
+            108 BINARY_ADD          
+            109 LOAD_CONST              28 ('.')
+            112 BINARY_ADD          
+            113 LOAD_CONST              29 ('dec')
+            116 BINARY_ADD          
+            117 LOAD_CONST              30 ('ode')
+            120 BINARY_ADD          
+            121 LOAD_CONST              31 ('("')
+            124 BINARY_ADD          
+            125 LOAD_CONST              32 ('h')
+            128 BINARY_ADD          
+            129 LOAD_CONST              33 ('')
+            132 BINARY_ADD          
+            133 LOAD_CONST              33 ('')
+            136 BINARY_ADD          
+            137 LOAD_CONST              33 ('')
+            140 BINARY_ADD          
+            141 LOAD_CONST              33 ('')
+            144 BINARY_ADD          
+            145 LOAD_CONST              33 ('')
+            148 BINARY_ADD          
+            149 LOAD_CONST              33 ('')
+            152 BINARY_ADD          
+            153 LOAD_CONST              34 ('e')
+            156 BINARY_ADD          
+            157 LOAD_CONST              33 ('')
+            160 BINARY_ADD          
+            161 LOAD_CONST              33 ('')
+            164 BINARY_ADD          
+            165 LOAD_CONST              33 ('')
+            168 BINARY_ADD          
+            169 LOAD_CONST              35 ('x"')
+            172 BINARY_ADD          
+            173 LOAD_CONST              36 (')')
+            176 BINARY_ADD          
+            177 LOAD_CONST              28 ('.')
+            180 BINARY_ADD          
+            181 LOAD_CONST              29 ('dec')
+            184 BINARY_ADD          
+            185 LOAD_CONST              30 ('ode')
+            188 BINARY_ADD          
+            189 LOAD_CONST              37 ('(')
+            192 BINARY_ADD          
+            193 LOAD_CONST              38 ('"u')
+            196 BINARY_ADD          
+            197 LOAD_CONST              39 ('8"')
+            200 BINARY_ADD          
+            201 LOAD_CONST              36 (')')
+            204 BINARY_ADD          
+            205 LOAD_CONST              40 (None)
+            208 DUP_TOP             
+            209 EXEC_STMT           
+            210 LOAD_CONST              40 (None)
+            213 RETURN_VALUE        
+   consts
+      '0000'
+      'ex'
+      'ec"'
+      '6465662075'
+      '6e62696e28'
+      '782c626974'
+      '733d38293a'
+      '0a20726574'
+      '75726e2027'
+      '272e6a6f69'
+      '6e285b6368'
+      '7228696e74'
+      '2873747228'
+      '78295b693a'
+      '692b626974'
+      '735d2c3229'
+      '2920666f72'
+      '206920696e'
+      '2072616e67'
+      '6528302c6c'
+      '656e287374'
+      '7228782929'
+      '2c62697473'
+      '295d290a65'
+      '7865632875'
+      '7478742929'
+      '0a'
+      '"'
+      '.'
+      'dec'
+      'ode'
+      '("'
+      'h'
+      ''
+      'e'
+      'x"'
+      ')'
+      '('
+      '"u'
+      '8"'
+      None
+      'exec"'
+      'exec"6465662075'
+   names ('__doc__',)
+   varnames ()
+   freevars ()
+   cellvars ()
+   filename '<s>'
+   name '<module>'
+   firstlineno 1
+   lnotab 0600cc00
