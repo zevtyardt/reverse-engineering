@@ -24,8 +24,8 @@ st = ['6465662075'
       '0a']
 full_st = ''.join(st)
 
-# full_st.decode('hex')
+full_st.decode('hex')
 
 # def unbin(x,bits=8):
 # return ''.join([chr(int(str(x)[i:i+bits],2)) for i in range(0,len(str(x)),bits)])
-exec(utxt))
+# exec(utxt))
